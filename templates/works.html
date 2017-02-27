@@ -1,0 +1,10 @@
+{% extends "index.html" %}
+
+{% block appl %}
+    <div class="works">
+        <div class="works_title">Works</div>
+        {% for work in works %}
+            {{ work }}
+        {% endfor %}
+    </div>
+{% endblock %}

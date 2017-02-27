@@ -1,0 +1,32 @@
+<!DOCTYPE html> {% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My site</title>
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+</head>
+<body>
+{% block appl %}
+    <div id="container">
+        <div class="greeting">
+            ... greeting animation here ...
+        </div>
+        <div class="menu">
+            <div class="submenu">
+                <div class="image"></div>
+                <a href="/about">About</a>
+            </div>
+            <div class="submenu">
+                <div class="image"></div>
+                <a href="/works">Works</a>
+            </div>
+            <div class="submenu">
+                <div class="image"></div>
+                <a href="/knowledge_area">Knowledge area</a>
+            </div>
+        </div>
+        <div class="footer"> ... footer here ...</div>
+    </div>
+{% endblock %}
+</body>
+</html>

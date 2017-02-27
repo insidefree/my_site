@@ -1,0 +1,13 @@
+{% extends "index.html" %}
+
+{% block appl %}
+    <div class="knowledge">
+        <div class="knowledge_title">Works</div>
+        {% for key, values_list in knowledge %}
+            <div>{{ key }}</div>
+            {% for val in values_list %}
+                {{ val }}
+            {% endfor %}
+        {% endfor %}
+    </div>
+{% endblock %}
