@@ -3,7 +3,7 @@
 {% block appl %}
     <div class="knowledge">
         <div class="knowledge_title">Works</div>
-        {% for key, values_list in knowledge %}
+        {% for key, values_list in knowledge.items %}
             <div>{{ key }}</div>
             {% for val in values_list %}
                 {{ val }}
