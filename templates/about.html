@@ -2,21 +2,21 @@
 
 {% block appl %}
     <div class="name">
-        Hello, my name is {{ person_info.first_name }} {{ person_info.last_name }} and I am glad to see you
+        Hello, my name is Denis Sorokin and I am glad to see you
     </div>
     <div class="resume">
         <div class="resume_title">Here you can see a story of my developer life</div>
         <div class="skills">
             <div class="skills_title">Skills</div>
             <div class="skills_list">
-                {% for skill in person_info.skills %}
+                {% for skill in skills %}
                     {{ skill }}
                 {% endfor %}
             </div>
         </div>
         <div class="experience">
             <div class="companies_title">Companies</div>
-            {% for company in person_info.companies %}
+            {% for company in companies %}
                 {{ company }}
             {% endfor %}
         </div>
