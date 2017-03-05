@@ -1,5 +1,5 @@
 from django.shortcuts import render, render_to_response
-from .models import Article, Work, Study, Company, Skill
+from .models import Article, Work, Study, Company, Skill, About_me
 from datetime import date
 
 art01 = Article(1, "python", "python content")
@@ -32,9 +32,14 @@ skill02 = Skill(2, "Django", "Describtion...django")
 skill01.save()
 skill02.save()
 
+about = About_me(1, "my story")
+about.save()
 
 def mainapp(request):
-    return render_to_response("index.html")
+    about_me = About_me.objects.all()
+    skills = Skill.objects.all()
+    works = Work.objects.all()
+    return render_to_response("index.html", {"about_me": about_me, "skills": skills, "works": works})
 
 
 def about(request):

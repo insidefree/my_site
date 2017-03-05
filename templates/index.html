@@ -1,32 +1,51 @@
 <!DOCTYPE html> {% load static %}
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>My site</title>
     <link rel="stylesheet" href="{% static 'css/styles.css' %}">
 </head>
+
 <body>
-{% block appl %}
+    {% block appl %}
     <div id="container">
         <div class="greeting">
-            ... greeting animation here ...
+            <div class="greeting_title">
+                Hey, I'm Denis,
+            </div>
+            <div class="greeting_title">
+                full-stack developer working in the land of Israel
+            </div>
+            <div class="write_to_me">
+                write to me
+            </div>
         </div>
         <div class="menu">
             <div class="submenu">
-                <div class="image"></div>
                 <a href="/about">About</a>
+                <div class="submenu_content">
+                    {{ about_me }} 
+                    {% for skill in skills %}
+                        {{ skill }}
+                    {% endfor %}
+                </div>
             </div>
             <div class="submenu">
-                <div class="image"></div>
                 <a href="/works">Works</a>
+                <div class="submenu_content">
+                    {% for work in works %}
+                        {{ work }}
+                    {% endfor %}
+                </div>
             </div>
             <div class="submenu">
-                <div class="image"></div>
                 <a href="/knowledge_area">Knowledge area</a>
+                <div class="submenu_content"></div>
             </div>
         </div>
-        <div class="footer"> ... footer here ...</div>
     </div>
-{% endblock %}
+    {% endblock %}
 </body>
+
 </html>

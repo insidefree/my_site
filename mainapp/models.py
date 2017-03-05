@@ -54,3 +54,13 @@ class Skill(models.Model):
     id = models.PositiveIntegerField(primary_key=True)
     name = models.CharField(max_length=32)
     describe = models.TextField()
+
+    def __str__(self):
+        return "{} - {}".format(self.name, self.describe)
+
+class About_me(models.Model):
+    id = models.PositiveIntegerField(primary_key=True)
+    content = models.TextField()
+
+    def __str__(self):
+        return "{}".format(self.content)
