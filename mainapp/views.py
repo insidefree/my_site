@@ -40,7 +40,8 @@ def mainapp(request):
     about = About.objects.all()
     skills = Skill.objects.all()
     works = Work.objects.all()
-    return render_to_response("index.html", {"about": about, "skills": skills, "works": works})
+    studies = Study.objects.all()
+    return render_to_response("index.html", {"about": about, "skills": skills, "works": works, "studies": studies})
 
 
 def about(request):

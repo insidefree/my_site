@@ -12,7 +12,6 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     vertical-align: baseline;
 }
 
-
 /* HTML5 display-role reset for older browsers */
 
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
@@ -40,7 +39,6 @@ table {
     border-collapse: collapse;
     border-spacing: 0;
 }
-
 
 /* My styles */
 
@@ -88,7 +86,7 @@ body {
 .write_to_me {
     opacity: 1;
     transform: matrix(1, 0, 0, 1, 0, 0);
-    font-family: "Hind",sans-serif;
+    font-family: "Hind", sans-serif;
     font-size: 100%;
     visibility: inherit;
     background-color: #063473;
@@ -104,8 +102,18 @@ body {
 }
 
 .submenu {
-    /*display: flex;*/
-    /*flex-direction: row;*/
-    /*align-items: center;*/
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.sub_title {
+    display: flex;
+    justify-content: center;
+    width: 20%;
+}
+
+.submenu_content{
     background-color: coral;
+    width: 100%;
 }

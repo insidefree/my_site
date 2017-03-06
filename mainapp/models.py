@@ -51,10 +51,10 @@ class Study(models.Model):
     date_to = models.DateField()
 
     def __str__(self):
-        return "{}, {}, {}, {}".format(self.name, self.date_start, self.date_end, self.describe)
+        return "{}".format(self.school_name)
 
     def __repr__(self):
-        return "{}, {}, {}, {}".format(self.name, self.date_start, self.date_end, self.describe)
+        return "{}".format(self.school_name)
 
 
 class Skill(models.Model):

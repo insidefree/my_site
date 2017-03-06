@@ -23,7 +23,7 @@
         </div>
         <div class="menu">
             <div class="submenu">
-                <div>About</div>
+                <div class="sub_title">About</div>
                 <div class="submenu_content">
                     {% for a in about %}
                         {{ a.first_name }}
@@ -35,7 +35,8 @@
                 </div>
             </div>
             <div class="submenu">
-                <a href="/works">Works</a>
+{#                <a href="/works">Works</a>#}
+                <div class="sub_title">Works</div>
                 <div class="submenu_content">
                     {% for work in works %}
                         {{ work }}
@@ -43,8 +44,13 @@
                 </div>
             </div>
             <div class="submenu">
-                <a href="/knowledge_area">Knowledge area</a>
-                <div class="submenu_content"></div>
+{#                <a href="/knowledge_area">Knowledge area</a>#}
+                <div class="sub_title">Knowledge</div>
+                <div class="submenu_content">
+                    {% for study in studies %}
+                        {{ study }}
+                    {% endfor %}
+                </div>
             </div>
         </div>
     </div>
