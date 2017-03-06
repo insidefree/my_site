@@ -8,7 +8,7 @@
 </head>
 
 <body>
-    {% block appl %}
+{% block appl %}
     <div id="container">
         <div class="greeting">
             <div class="greeting_title">
@@ -23,38 +23,45 @@
         </div>
         <div class="menu">
             <div class="submenu">
-                <div class="sub_title">About</div>
+                <div class="sub_title">About myself</div>
                 <div class="submenu_content">
-                    {% for a in about %}
-                        {{ a.first_name }}
-                        {{ a.last_name }}
-                    {% endfor %}
-                    {% for skill in skills %}
-                        {{ skill }}
-                    {% endfor %}
+                    <p class="text">Hey what's up? Full name's {{ about.first_name }} {{ about.last_name }} but everyone
+                        calls me Den.
+                        I'm a developer born & raised in SSSR, but currently working in Tel Aviv at Israel</p>
+                    <p>
+                    <p class="text">
+                        Fluent in <em>HTML5</em> <em>CSS3</em> <em>Sass</em> and improving on my JavaScript every day.
+                        I know my way around <em>Python</em> with <em>Django</em> and I've recently started
+                        experimenting
+                        with REST APIs using <em>React</em>.
+                    </p>
+                    <a href="/about">More detailed</a>
                 </div>
             </div>
             <div class="submenu">
-{#                <a href="/works">Works</a>#}
-                <div class="sub_title">Works</div>
+                <div class="sub_title">Experience</div>
                 <div class="submenu_content">
                     {% for work in works %}
-                        {{ work }}
+                        <p class="text">
+                            {{ work.company }}. Position {{ work.position }}. My duties: {{ work.duties }}
+                        </p>
                     {% endfor %}
+                    <a href="/works">Works in detailed</a>
                 </div>
             </div>
             <div class="submenu">
-{#                <a href="/knowledge_area">Knowledge area</a>#}
-                <div class="sub_title">Knowledge</div>
+                <div class="sub_title">Study</div>
                 <div class="submenu_content">
                     {% for study in studies %}
-                        {{ study }}
+                        <p class="text">
+                            {{ study.school_name }} Course: {{ study.course_name }}
+                        </p>
                     {% endfor %}
                 </div>
             </div>
         </div>
     </div>
-    {% endblock %}
+{% endblock %}
 </body>
 
 </html>

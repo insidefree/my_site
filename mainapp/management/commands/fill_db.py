@@ -60,9 +60,19 @@ class Command(BaseCommand):
             {'name': 'digging -)'},
         ]
         studies = [
-            {'school_name': 'school', 'course_name': 36, 'date_from': date(1990, 9, 1), 'date_to': date(1998, 6, 1)},
-            {'school_name': 'lyceum', 'course_name': 66, 'date_from': date(1998, 9, 1), 'date_to': date(2001, 6, 1)},
-            {'school_name': 'university', 'course_name': 0, 'date_from': date(2001, 9, 1), 'date_to': date(2006, 8, 1)},
+            {'school_name': 'Tel-Ran',
+             'course_name': 'Master of Computer Applications (MCA) Field Of Study Computer Programming',
+             'date_from': date(1990, 9, 1),
+             'date_to': date(1998, 6, 1)},
+            {'school_name': 'Technion - Israel Institute of Technology',
+             'course_name': 'Network design and security',
+             'date_from': date(1998, 9, 1),
+             'date_to': date(2001, 6, 1)},
+            {'school_name': 'Sevastopol National Technical University',
+             'course_name': 'Master\'s degree Field Of Study Automatics and Computer Technology department with a '
+                            'diploma in Systems',
+             'date_from': date(2001, 9, 1),
+             'date_to': date(2006, 8, 1)},
         ]
         articles = [
             {'type': 'javascript', 'content': 'javascript article'},

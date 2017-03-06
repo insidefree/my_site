@@ -37,7 +37,7 @@ from datetime import date
 
 
 def mainapp(request):
-    about = About.objects.all()
+    about = About.objects.get()
     skills = Skill.objects.all()
     works = Work.objects.all()
     studies = Study.objects.all()
@@ -52,7 +52,8 @@ def about(request):
 
 def works(request):
     works = Work.objects.all()
-    return render_to_response("works.html", {"works": works})
+    companies = Company.objects.all()
+    return render_to_response("works.html", {"works": works, "companies": companies})
 
 
 def knowledge_area(request):

@@ -1,25 +1,13 @@
 {% extends "index.html" %}
+{% load static %}
 
 {% block appl %}
-    <div class="name">
-        Hello, my name is Denis Sorokin and I am glad to see you
-    </div>
-    <div class="resume">
-        <div class="resume_title">Here you can see a story of my developer life</div>
-        <div class="skills">
-            <div class="skills_title">Skills</div>
-            <div class="skills_list">
-                {% for skill in skills %}
-                    {{ skill }}
-                {% endfor %}
-            </div>
-        </div>
-        <div class="experience">
-            <div class="companies_title">Companies</div>
-            {% for company in companies %}
-                {{ company }}
-            {% endfor %}
-        </div>
+    <div>
+        Если вы это читаете то уменя вопрос - Я добавил на эту страницу ВИДЕО webm, но оно не работет. Расскажите что делать))))
+        <video width="400" height="200">
+            <source src="{% static 'video/about.webm' %}" type="video/x-webm"></source>
+        </video>
+        <a href="/">Back</a>
     </div>
 
 {% endblock %}

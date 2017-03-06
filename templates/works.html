@@ -4,7 +4,14 @@
     <div class="works">
         <div class="works_title">Works</div>
         {% for work in works %}
-            {{ work }}
+            <p class="text">
+                {{ work.company }}. Position {{ work.position }}. My duties: {{ work.duties }}.
+                About company
+            </p>
+        {% endfor %}
+        {% for company in companies %}
+            {{ company }}
         {% endfor %}
     </div>
+    <a href="/">Back</a>
 {% endblock %}
