@@ -104,7 +104,8 @@ body {
 }
 
 .submenu {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    /*display: flex;*/
+    /*flex-direction: row;*/
+    /*align-items: center;*/
+    background-color: coral;
 }

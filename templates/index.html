@@ -23,9 +23,12 @@
         </div>
         <div class="menu">
             <div class="submenu">
-                <a href="/about">About</a>
+                <div>About</div>
                 <div class="submenu_content">
-                    {{ about_me }} 
+                    {% for a in about %}
+                        {{ a.first_name }}
+                        {{ a.last_name }}
+                    {% endfor %}
                     {% for skill in skills %}
                         {{ skill }}
                     {% endfor %}
