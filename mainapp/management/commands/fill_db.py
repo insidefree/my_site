@@ -34,7 +34,8 @@ class Command(BaseCommand):
                             'products and selling them in Israel and worldwide.',
              'country': 'Israel',
              'city': 'Rishon LeTsiyon',
-             'site': 'http://www.yit.co.il'},
+             'site': 'http://www.yit.co.il',
+             'logo': '/static/images/logos/YIT.png'},
             {'name': 'Beame.io',
              'description': 'Beame.io is the first cryptographic identity services provider'
                             'that doesn\'t hold a single key. We developed a new way to'
@@ -42,17 +43,18 @@ class Command(BaseCommand):
                             'that works seamlessly with mobile and IoT devices.',
              'country': 'Israel',
              'city': 'Tel Aviv',
-             'site': 'https://www.beame.io'},
+             'site': 'https://www.beame.io',
+             'logo': '/static/images/logos/Beameio.png'},
             {'name': 'Correalata Solutions Ltd.',
-             'description': 'Yedioth Information Technologies (YIT) is an independent company, established '
-                            'for the purpose of serving as the Information Technologies (IT) body of Yedioth Acharonot '
-                            'group. During our ten years of activity we have led Yedioth Acharonot to the technology '
-                            'front in the press field, and in other paralleling fields. In a short period of time we '
-                            'have transformed from a small company providing only support to a company developing '
-                            'products and selling them in Israel and worldwide.',
+             'description': 'Correlata provides a new business-centric IT management layer that transforms IT '
+                            'operations and service metrics into business metrics,  helping companies gain the highest'
+                            'level of visibility and control on ALL their IT Infrastructure environments to senior'
+                            'management, ensuring companies use their Data Center infrastructure investments'
+                            'coordinating to their design intentions and business objectives.',
              'country': 'Israel',
              'city': 'Yavne',
-             'site': 'http://www.correlata.com'}
+             'site': 'http://www.correlata.com',
+             'logo': '/static/images/logos/Correlata.png'}
         ]
         hobbies = [
             {'name': 'tourism'},

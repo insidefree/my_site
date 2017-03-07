@@ -134,8 +134,35 @@ em {
     font-style: normal;
     position: relative;
 }
-.submenu_content a{
+
+.submenu_content a {
     display: flex;
     justify-content: flex-end;
     margin-right: 10px;
+}
+
+.works_list {
+    display: flex;
+    /*flex-flow: row wrap;*/
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+
+}
+
+.works_title{
+    text-align: center;
+
+}
+.work {
+    font-size: .9375rem;
+    line-height: 1.818;
+    font-weight: 300;
+    margin: 0 10px 0 10px;
+}
+
+.logo{
+    width: 10vh;
+    height: 10vh;
+    border-radius: 50%;
 }

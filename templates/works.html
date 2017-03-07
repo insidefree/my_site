@@ -1,17 +1,14 @@
 {% extends "index.html" %}
-
 {% block appl %}
-    <div class="works">
-        <div class="works_title">Works</div>
+    <a href="/">Back</a>
+    <div class="works_title">Works</div>
+    <div class="works_list">
         {% for work in works %}
-            <p class="text">
+            <div class="work">
+                <img class="logo" src="{{ work.company.logo }}" alt="">
                 {{ work.company }}. Position {{ work.position }}. My duties: {{ work.duties }}.
-                About company
-            </p>
-        {% endfor %}
-        {% for company in companies %}
-            {{ company }}
+                About company: {{ work.company.description }}
+            </div>
         {% endfor %}
     </div>
-    <a href="/">Back</a>
 {% endblock %}

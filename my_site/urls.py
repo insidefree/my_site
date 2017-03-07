@@ -16,6 +16,9 @@ Including another URLconf
 from django.conf.urls import url
 from django.contrib import admin
 from mainapp.views import *
+from django.conf.urls.static import static
+from django.conf import settings
+
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
@@ -23,4 +26,4 @@ urlpatterns = [
     url(r'^about/', about),
     url(r'^works/', works),
     url(r'^knowledge_area', knowledge_area)
-]
+] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

@@ -20,6 +20,7 @@ class Company(models.Model):
     country = models.CharField(max_length=32, default='', blank=True)
     city = models.CharField(max_length=32, blank=True)
     site = models.CharField(max_length=32, blank=True)
+    logo = models.ImageField('logo', upload_to='static/images/logos', default='', blank=True)
 
     def __str__(self):
         return "{}".format(self.name)
@@ -73,6 +74,7 @@ class About(models.Model):
     email = models.CharField(max_length=32)
     phone = models.CharField(max_length=10)
     story = models.TextField()
+
 
     def __str__(self):
         return "{}".format(self.first_name)
